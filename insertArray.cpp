@@ -1,7 +1,7 @@
 #include "stdio.h"
 #include "stdlib.h"
-
-void insertArray(int a[][], int m, int n){
+#define MAX 1000
+void getArray(int a[MAX][MAX], int m, int n){
 	for(int i=0;i<m;i++){
 		printf("Nhap cac gia tri hang thu %d",i+1);
 		for(int j=0;j<n;j++){
@@ -10,7 +10,7 @@ void insertArray(int a[][], int m, int n){
 		printf("\n");
 	}
 }
-void printArray(int a[][], int m, int n){
+void printArray(int a[MAX][MAX], int m, int n){
 	printf("\nCAC GIA TRI TRONG MANG");
 	for(int i=0; i < m;i++){
 		for(int j=0;j<n;j++){
@@ -20,12 +20,12 @@ void printArray(int a[][], int m, int n){
 	}
 }
 int main(){
-	int a[m][n], m, n;
+	int a[MAX][MAX], m, n;
 	printf("Nhap so hang: ");
 	scanf("%d", &m);
 	printf("\nNhap so cot: ");
 	scanf("%d",&n);
-	insertArray(a,m,n);
+	getArray(a,m,n);
 	printArray(a,m,n);
 	return 0;
 }
