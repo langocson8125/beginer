@@ -23,7 +23,7 @@ int main(){
 	int a[m][n], m, n;
 	printf("Nhap so hang: ");
 	scanf("%d", &m);
-	printf("Nhap so cot: ");
+	printf("\nNhap so cot: ");
 	scanf("%d",&n);
 	insertArray(a,m,n);
 	printArray(a,m,n);
