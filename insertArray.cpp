@@ -11,7 +11,7 @@ void getArray(int a[][MAX], int m, int n){
 	}
 }
 void printArray(int a[][MAX], int m, int n){
-	printf("\nCAC GIA TRI TRONG MANG");
+	printf("CAC GIA TRI TRONG MANG\n");
 	for(int i=0; i < m;i++){
 		for(int j=0;j<n;j++){
 			printf("%d ",a[i][j]);
