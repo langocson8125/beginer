@@ -26,5 +26,6 @@ int main(){
 	printf("Nhap so cot: ");
 	scanf("%d",&n);
 	insertArray(a,m,n);
+	printArray(a,m,n);
 	return 0;
 }
