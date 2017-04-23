@@ -6,7 +6,7 @@
 <body>
 <script type="text/javascript">
 	"use strict";
-	let inputString;
+	let inputString = prompt("Insert a short string: ","");
 	function checkPalindrome(inputString) {
     	let max = inputString.length;
     	if(max % 2 == 0){
@@ -20,7 +20,7 @@
         	}
         	return true;
 	}
-	checkPalindrome("abcba");
+	checkPalindrome(inputString);
 </script>
 </body>
 </html>
