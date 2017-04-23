@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Test</title>
+</head>
+<body>
+<script type="text/javascript">
+	"use strict";
+	let inputString;
+	function checkPalindrome(inputString) {
+    	let max = inputString.length;
+    	if(max % 2 == 0){
+        	for(i=0;i<max/2;i++){
+            if(inputString[i] != inputString[--max]) return false;
+        	}
+        	return true;
+    	}
+        	for(i=0;i<max/2;i++){
+            if(inputString[i] != inputString[--max]) return false;
+        	}
+        	return true;
+	}
+	checkPalindrome("abcba");
+</script>
+</body>
+</html>
